@@ -124,7 +124,7 @@
                             </div>
                         @else
                             <div class="col-xxl-4 col-sm-5 my-0 mx-0">
-                                <input name="id_kamar[]" type="checkbox" class="btn-check"
+                                <input required name="id_kamar[]" type="checkbox" class="btn-check"
                                     id="btn-check-{{ $loop->iteration }}" value="{{ $item->id }}"
                                     autocomplete="off">
                                 <label class="btn p-0 crd" for="btn-check-{{ $loop->iteration }}">
