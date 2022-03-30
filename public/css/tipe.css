@@ -112,6 +112,7 @@ body {
     z-index: 999999;
     margin-left: 90px;
     margin-right: 100px;
+    padding: 0 20px 0 20px;
 }
 .flt p {
     margin-bottom: 0;

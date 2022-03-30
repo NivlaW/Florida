@@ -68,7 +68,7 @@
         </div>
         <form action="/kamar" method="GET">
             @csrf
-            <div class="flt shadow-lg bg-white">
+            <div class="flt justify-content-center shadow-lg bg-white">
                 <div class="py-5 px-5 d-flex">
                     <div class="select me-3">
                         <label>Tipe Room</label>
@@ -169,6 +169,7 @@
         .disclaimer {
             display: none !important;
         }
+
     </style>
 </body>
 

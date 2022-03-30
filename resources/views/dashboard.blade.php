@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex flt shadow-lg bg-white">
+        <div class="d-flex flt justify-content-center shadow-lg bg-white">
             <div class="py-5 px-5 d-flex">
                 <div class="select me-3">
                     <label>Tipe Room</label>
