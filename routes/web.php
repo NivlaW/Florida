@@ -20,9 +20,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', roomController::class. '@client' );
-Route::get('/login', [authController::class, 'formLogin']);
+Route::get('/login', [authController::class, 'formLogin'])->name('login');
 Route::post('/admin', [authController::class, 'login']);
-Route::get('/login', [authController::class, 'formLogin']);
 Route::post('/resepsionis', [authController::class, 'login']);
 Route::get('/jenis/{id_jenis}',[roomController::class,'jenis']);
 Route::get('kamar',[pesanController::class,'detail']);
