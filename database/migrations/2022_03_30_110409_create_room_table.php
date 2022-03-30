@@ -15,7 +15,7 @@ class CreateRoomTable extends Migration
     {
         Schema::create('room', function (Blueprint $table) {
             $table->id();
-            $table->string('nomor');
+            $table->string('no');
             $table->foreignId('id_jenis')->constrained('jenis');
             $table->string('bed');
             $table->text('deskripsi');
