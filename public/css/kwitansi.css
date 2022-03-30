@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif!important;
+    background-color: darkgray!important;
+}
+.kwtn{
+    border-radius: 20px!important;
+    /* box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.28); */
+}
+.page {
+    min-height: 100vh!important;
+}
+.atas{
+    background-color: #ffffff!important;
+    border-top-right-radius: 40px!important;
+    border-top-left-radius: 40px!important;
+}
+.tengah{
+    border-top: 2px dashed #797979!important;
+    border-bottom: 2px dashed #797979!important;
+    background-color: #ffdfd0!important;
+}
+.bawah{
+    background-color: #ffffff!important;
+    border-bottom-right-radius: 40px!important;
+    border-bottom-left-radius: 40px!important;
+}
+.dash {
+    border-top: 2px dashed #797979!important;
+}
+.blt .kiri {
+    /* background-color: #ffffff!important; */
+    position: relative;
+    margin-top: -28px;
+    margin-bottom: -68px;
+    margin-left: -1px;
+    background-color: darkgray;
+    height: 60px;
+    width: 30px;
+    border-radius: 0 150px 150px 0;
+}
+.blt .kanan {
+    /* background-color: #ffffff!important; */
+    position: relative;
+    margin-top: -28px;
+    margin-bottom: -68px;
+    margin-right: -1px;
+    background-color: darkgray;
+    height: 60px;
+    width: 30px;
+    border-radius: 150px 0 0 150px;
+}

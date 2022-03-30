@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif!important;
+    
+}
+#navbar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    z-index: 500;
+}
+
+#navbar .nav-navbar {
+    height: 10vh;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    z-index: 300;
+    color: #a8a8a8;
+}
+.knn{
+    margin-right: 0!important;
+}
+
+#navbar ul li {
+    margin-right: 25px;
+}
+
+
+#navbar ul li a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #f96720;
+}
+
+#navbar .active {
+    color: rgb(0, 0, 0);
+    border: 1px solid #a8a8a8;
+    border-radius: 30px;
+}
+.nm {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.rst {
+    z-index: -1;
+    content: "";
+    width: 1296px;
+    height: 528px;
+    background-image: url(../image/htl1.jpg);
+    object-fit: cover;
+    background-size: contain;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.htl {
+    z-index: -1;
+    width: 1296px;
+    height: 528px;
+    object-fit: cover;
+    background-size: contain;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.topo {
+    opacity: 20%;
+    z-index: -2;
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-image: url(../image/topo.jpg);
+    background-size: contain;
+}
+.col-lg-6 {
+    z-index: 400;
+}
+.col-lg-6 h2 {
+    font-weight: 700;
+    font-size: 7.5em;
+    margin-bottom: 0;
+    line-height: 0.95em;
+}
+.col-lg-6 h2 span{
+    color: #f96720;
+}
+.col-lg-6 p {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.tx {
+    margin-bottom: 80px;
+}
+.flt {
+    border-radius: 25px;
+    z-index: 999999;
+    margin-left: 90px;
+    margin-right: 100px;
+}
+.flt p {
+    margin-bottom: 0;
+}
+.select {
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    border: 2px solid #c9c9c9;
+}
+.jnsbs {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    flex: 1;
+    background-image: none;
+    cursor: pointer;
+}
+#jns * {
+    font-weight: 600;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 25px;
+    padding: 25px;
+}
+option * {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px!important;
+}
+.slnjt {
+    z-index: 100;
+    padding: 15px 25px 15px 25px;
+    background-color: #f96720;
+    border-radius: 30px;
+    font-size: 2em;
+    color: white;
+}
+.slnjt:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+.lstbs {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 55px;
+}
+.lstbs h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+.lstfsl {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+.lstfsl h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+.listroom {
+    margin: 0 45px 0 45px!important;
+}
+.crd {
+    margin-bottom: 20px;
+    border-radius: 25PX!important;
+}
+.crad {
+    margin-top: -40px!important;
+}
+.ftkmr {
+    z-index: -1;
+    border-radius: 25px;
+    width: 350px;
+    height: 450px;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+.ftfsl {
+    z-index: -1;
+    border-radius: 25px;
+    width: 525px;
+    height: 450px;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+.rsrvd{
+    filter: grayscale(100%)!important;
+}
+.txtlist {
+    margin-top: -100px;
+    z-index: 99;
+    position: relative;
+    height: 100px;
+    width: 350px;
+    padding: 15px 15px 15px 15px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5746673669467788) 58%, rgba(0,0,0,0.8379726890756303) 100%);
+    color: white;
+    border-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.txtlist .jdl {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.txtlist p {
+    margin-bottom: 0;
+}
+.txtfsl {
+    margin-top: -150px;
+    z-index: 99;
+    position: relative;
+    height: 150px;
+    width: 525px;
+    padding: 25px 15px 15px 15px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5746673669467788) 58%, rgba(0,0,0,0.8379726890756303) 100%);
+    color: white;
+    border-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.txtfsl .jdl {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.txtfsl p {
+    margin-bottom: 0;
+}
+.tgl {
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 1.4em;
+    user-select: none!important;
+    -webkit-user-select: none;
+}
+.tgl:active {
+    user-select: none!important;
+    -webkit-user-select: none;
+}
+.tgl:focus{
+    border: 0;
+    outline: 0;
+    user-select: none!important;
+    -webkit-user-select: none;
+}
+::-webkit-inner-spin-button { 
+    display: none; 
+}
+::-webkit-calendar-picker-indicator {
+    margin: -7px 0;
+    position: absolute;
+    width: 9%;
+    background: transparent;
+}
+input[type=date]{
+    user-select: none!important;
+    -webkit-user-select: none;
+}
+
+input[type=checkbox]:checked + .btn {
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%)!important;
+    border-radius: 25px!important;
+}
+.psn {
+    margin:0 100px 0 0;
+}
+.btm{
+    background: inherit;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.192);
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .btm {
+      -webkit-backdrop-filter: blur(3.5px);
+      backdrop-filter: blur(4px);
+      background: inherit;
+      border: 1px solid rgba(214, 214, 214, 0.568);
+    }
+}
