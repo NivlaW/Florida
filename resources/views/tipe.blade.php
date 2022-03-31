@@ -10,6 +10,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/js/bootstrap.min.js') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('sweetalert/sweetalert2.min.css') }}">
     <link rel="shortcut icon" href="{{ asset('image/f.png') }}" type="image/x-icon">
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -124,7 +125,7 @@
                             </div>
                         @else
                             <div class="col-xxl-4 col-sm-5 my-0 mx-0">
-                                <input required name="id_kamar[]" type="checkbox" class="btn-check"
+                                <input name="id_kamar[]" type="checkbox" class="btn-check"
                                     id="btn-check-{{ $loop->iteration }}" value="{{ $item->id }}"
                                     autocomplete="off">
                                 <label class="btn p-0 crd" for="btn-check-{{ $loop->iteration }}">
@@ -165,12 +166,26 @@
             </div>
         </div>
     </div>
-    <style>
-        .disclaimer {
-            display: none !important;
-        }
+    <script src="{{ asset('sweetalert/sweetalert2.all.min.js') }}"></script>
+    @if ('success')
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Anda berhasil memilih tipe kamar selanjutnya pilih kamar yang tersedia',
+            })
+        </script>
+    @endif
 
-    </style>
+    @if ($errors->any())
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Silahkan pilih kamar dan tanggal terlebih dahulu',
+            })
+        </script>
+    @endif
 </body>
 
 </html>

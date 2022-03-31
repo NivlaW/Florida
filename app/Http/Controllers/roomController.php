@@ -68,7 +68,7 @@ class roomController extends Controller
             'gambar' => $imageName,
             'status' => 0
         ]);
-        return redirect('/admin/dashboard')->with('status', 'Data Berhasil Ditambahkan');
+        return redirect('/admin/dashboard')->with('addSuccess', 'Data Berhasil Ditambahkan');
     }
 
     /**
@@ -127,7 +127,7 @@ class roomController extends Controller
             'harga' => $request->harga,
             'gambar' => $imageName
         ]);
-        return redirect('/admin/dashboard')->with('status', 'Data Berhasil Diedit');
+        return redirect('/admin/dashboard')->with('updateSuccess', 'Data Berhasil Diedit');
     }
 
     /**
@@ -139,13 +139,13 @@ class roomController extends Controller
     public function destroy($id)
     {
         room::destroy($id);
-        return redirect('/admin/dashboard');
+        return redirect('/admin/dashboard')->with('deleteSuccess', 'Data Berhasil Dihapus');
     }
     public function jenis($id)
     {
         $jenis = jenis::all();
         $room = room::where('id_jenis', $id)->get();
         $fasilitas = fasilitas::all();
-        return view('tipe', compact('jenis','room','id','fasilitas'));
+        return view('tipe', compact('jenis','room','id','fasilitas'))->with('success', 'Silahkan Pilih kamar');
     }
 }

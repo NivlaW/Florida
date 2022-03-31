@@ -14,7 +14,11 @@ class pesanController extends Controller
 {
     public function detail(Request $request)
     {
-        $req = $request->all();
+        $req = $request->validate([
+            'id_kamar' => 'required',
+            'mulai' => 'required',
+            'selesai' => 'required',
+        ]);
         return view('kamar', compact('req'));
     }
     public function pesan(Request $request)

@@ -10,6 +10,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/js/bootstrap.min.js') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('sweetalert/sweetalert2.min.css') }}">
     <link rel="shortcut icon" href="{{ asset('image/f.png') }}" type="image/x-icon">
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,7 +42,7 @@
                     </li>
                     <li><a href="#listbus" class="px-3 active nav-link">Order</a></li>
                     <li class="knn">
-                        <a class="nav-link"  href="/login">
+                        <a class="nav-link" href="/login">
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </li>
@@ -97,6 +98,16 @@
             </div>
         </form>
     </div>
+    <script src="{{ asset('sweetalert/sweetalert2.all.min.js') }}"></script>
+    @if ('success')
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Anda berhasil memilih kamar selanjutnya isi form biodata anda',
+            })
+        </script>
+    @endif
 </body>
 
 </html>
